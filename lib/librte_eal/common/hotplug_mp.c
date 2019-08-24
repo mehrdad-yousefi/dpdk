@@ -369,6 +369,9 @@ int eal_dev_hotplug_request_to_primary(struct eal_dev_mp_req *req)
 	struct eal_dev_mp_req *resp;
 	int ret;
 
+	req->result = 0;
+	return 0;
+
 	memset(&mp_req, 0, sizeof(mp_req));
 	memcpy(mp_req.param, req, sizeof(*req));
 	mp_req.len_param = sizeof(*req);
@@ -396,6 +399,9 @@ int eal_dev_hotplug_request_to_secondary(struct eal_dev_mp_req *req)
 	struct timespec ts = {.tv_sec = MP_TIMEOUT_S, .tv_nsec = 0};
 	int ret;
 	int i;
+
+	req->result = 0;
+	return 0;
 
 	memset(&mp_req, 0, sizeof(mp_req));
 	memcpy(mp_req.param, req, sizeof(*req));
@@ -436,6 +442,8 @@ int eal_dev_hotplug_request_to_secondary(struct eal_dev_mp_req *req)
 int rte_mp_dev_hotplug_init(void)
 {
 	int ret;
+
+  return 0;
 
 	if (rte_eal_process_type() == RTE_PROC_PRIMARY) {
 		ret = rte_mp_action_register(EAL_DEV_MP_ACTION_REQUEST,
