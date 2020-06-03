@@ -595,8 +595,8 @@ CONFIG_RTE_LIBRTE_PMD_OCTEONTX_CRYPTO=n
 #
 # Compile PMD for QuickAssist based devices - see docs for details
 #
-CONFIG_RTE_LIBRTE_PMD_QAT=n
-CONFIG_RTE_LIBRTE_PMD_QAT_SYM=n
+#CONFIG_RTE_LIBRTE_PMD_QAT=n
+#CONFIG_RTE_LIBRTE_PMD_QAT_SYM=n
 CONFIG_RTE_LIBRTE_PMD_QAT_ASYM=n
 #
 # Max. number of QuickAssist devices, which can be detected and attached
@@ -849,7 +849,7 @@ CONFIG_RTE_LIBRTE_CMDLINE_DEBUG=n
 #
 # Compile librte_hash
 #
-CONFIG_RTE_LIBRTE_HASH=n
+#CONFIG_RTE_LIBRTE_HASH=n
 CONFIG_RTE_LIBRTE_HASH_DEBUG=n
 
 #
@@ -964,7 +964,7 @@ CONFIG_RTE_LIBRTE_DISTRIBUTOR=n
 #
 # Compile the reorder library
 #
-CONFIG_RTE_LIBRTE_REORDER=n
+#CONFIG_RTE_LIBRTE_REORDER=n
 
 #
 # Compile librte_port
